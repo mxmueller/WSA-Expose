@@ -1,0 +1,18 @@
+[0] Config.pm:306> INFO - This is Biber 2.18
+[0] Config.pm:309> INFO - Logfile is 'main.blg'
+[108] biber-MSWIN32:340> INFO - === 
+[148] Biber.pm:418> INFO - Reading 'main.bcf'
+[369] Biber.pm:975> INFO - Using all citekeys in bib section 0
+[385] Biber.pm:4401> INFO - Processing section 0
+[398] Biber.pm:4592> INFO - Looking for bibtex file 'Bibliography.bib' for section 0
+[451] bibtex.pm:1713> INFO - LaTeX decoding ...
+[476] bibtex.pm:1518> INFO - Found BibTeX data source 'Bibliography.bib'
+[571] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[571] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[571] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'level = 4' with 'level = 2'
+[571] Biber.pm:4221> INFO - Sorting list 'cms/global//global/global' of type 'entry' with template 'cms' and locale 'de-DE'
+[572] Biber.pm:4227> INFO - No sort tailoring available for locale 'de-DE'
+[578] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[583] bbl.pm:757> INFO - Output to main.bbl
+[584] Biber.pm:130> WARN - legacy month field 'November' in entry 'Vandevoorde:2002' is not an integer - this will probably not sort properly.
+[584] Biber.pm:132> INFO - WARNINGS: 1
