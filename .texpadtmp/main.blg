@@ -1,15 +1,15 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is '/Users/maximilianmuller/Git/WSA-Expose/.texpadtmp/main.blg'
-[69] biber-darwin:340> INFO - === Wed Aug 23, 2023, 14:06:34
-[83] Biber.pm:415> INFO - Reading '/Users/maximilianmuller/Git/WSA-Expose/.texpadtmp/main.bcf'
-[159] Biber.pm:952> INFO - Found 9 citekeys in bib section 0
-[172] Biber.pm:4340> INFO - Processing section 0
-[182] Biber.pm:4531> INFO - Looking for bibtex format file '/Users/maximilianmuller/Git/WSA-Expose/quellen.bib' for section 0
-[183] bibtex.pm:1689> INFO - LaTeX decoding ...
-[195] bibtex.pm:1494> INFO - Found BibTeX data source '/Users/maximilianmuller/Git/WSA-Expose/quellen.bib'
-[281] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[281] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[281] Biber.pm:4168> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'de-DE'
-[281] Biber.pm:4174> INFO - No sort tailoring available for locale 'de-DE'
-[297] bbl.pm:654> INFO - Writing '/Users/maximilianmuller/Git/WSA-Expose/.texpadtmp/main.bbl' with encoding 'UTF-8'
-[302] bbl.pm:757> INFO - Output to /Users/maximilianmuller/Git/WSA-Expose/.texpadtmp/main.bbl
+[61] biber-darwin:340> INFO - === Wed Aug 23, 2023, 14:15:36
+[72] Biber.pm:415> INFO - Reading '/Users/maximilianmuller/Git/WSA-Expose/.texpadtmp/main.bcf'
+[142] Biber.pm:952> INFO - Found 9 citekeys in bib section 0
+[154] Biber.pm:4340> INFO - Processing section 0
+[162] Biber.pm:4531> INFO - Looking for bibtex format file '/Users/maximilianmuller/Git/WSA-Expose/quellen.bib' for section 0
+[163] bibtex.pm:1689> INFO - LaTeX decoding ...
+[172] bibtex.pm:1494> INFO - Found BibTeX data source '/Users/maximilianmuller/Git/WSA-Expose/quellen.bib'
+[251] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[251] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[251] Biber.pm:4168> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'de-DE'
+[251] Biber.pm:4174> INFO - No sort tailoring available for locale 'de-DE'
+[264] bbl.pm:654> INFO - Writing '/Users/maximilianmuller/Git/WSA-Expose/.texpadtmp/main.bbl' with encoding 'UTF-8'
+[269] bbl.pm:757> INFO - Output to /Users/maximilianmuller/Git/WSA-Expose/.texpadtmp/main.bbl
