@@ -1,0 +1,351 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{arbeit30}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3e2123e66dfd916ff3078cfb572342b1}{%
+           family={{BITKOM Bundesverband Informationswirtschaft, Telekommunikation und neue Medien e. V.}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {BITKOM}%
+      }
+      \strng{namehash}{3e2123e66dfd916ff3078cfb572342b1}
+      \strng{fullhash}{3e2123e66dfd916ff3078cfb572342b1}
+      \strng{bibnamehash}{3e2123e66dfd916ff3078cfb572342b1}
+      \strng{authorbibnamehash}{3e2123e66dfd916ff3078cfb572342b1}
+      \strng{authornamehash}{3e2123e66dfd916ff3078cfb572342b1}
+      \strng{authorfullhash}{3e2123e66dfd916ff3078cfb572342b1}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Arbeit 3.0: Arbeiten in der digitalen Welt}
+      \field{year}{2013}
+    \endentry
+    \entry{frauenhofer}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1f2ea9eda47d805e90fbdc30df1bd4db}{%
+           family={{Claudia Ricci, Fraunhofer Institut}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{1f2ea9eda47d805e90fbdc30df1bd4db}
+      \strng{fullhash}{1f2ea9eda47d805e90fbdc30df1bd4db}
+      \strng{bibnamehash}{1f2ea9eda47d805e90fbdc30df1bd4db}
+      \strng{authorbibnamehash}{1f2ea9eda47d805e90fbdc30df1bd4db}
+      \strng{authornamehash}{1f2ea9eda47d805e90fbdc30df1bd4db}
+      \strng{authorfullhash}{1f2ea9eda47d805e90fbdc30df1bd4db}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Die digitale Transformation in Unternehmen: Wie aus einem Buzzword gelebte Realität wird}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://blog.iao.fraunhofer.de/die-digitale-transformation-in-unternehmen-wie-aus-einem-buzzword-gelebte-realitaet-wird/
+      \endverb
+      \verb{url}
+      \verb https://blog.iao.fraunhofer.de/die-digitale-transformation-in-unternehmen-wie-aus-einem-buzzword-gelebte-realitaet-wird/
+      \endverb
+    \endentry
+    \entry{frenz1963definition}{incollection}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=981001590c07fba27a1169c71ffc5164}{%
+           family={Frenz},
+           familyi={F\bibinitperiod},
+           given={Walter},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {VS Verlag für Sozialwissenschaften, Wiesbaden}%
+      }
+      \strng{namehash}{981001590c07fba27a1169c71ffc5164}
+      \strng{fullhash}{981001590c07fba27a1169c71ffc5164}
+      \strng{bibnamehash}{981001590c07fba27a1169c71ffc5164}
+      \strng{authorbibnamehash}{981001590c07fba27a1169c71ffc5164}
+      \strng{authornamehash}{981001590c07fba27a1169c71ffc5164}
+      \strng{authorfullhash}{981001590c07fba27a1169c71ffc5164}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Forschungsberichte des Landes Nordrhein-Westfalen}
+      \field{title}{Die Definition der Produktivität. In: Beitrag zur Messung der Produktivität und deren Vergleich auf der Grundlage technischer Mengengrößen}
+      \field{volume}{1228}
+      \field{year}{1963}
+      \verb{doi}
+      \verb 10.1007/978-3-663-02346-3_2
+      \endverb
+    \endentry
+    \entry{gorovoj2019technologieakzeptanz}{thesis}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7f72ebd5bfe3af76f2faf8a2cfe85bcb}{%
+           family={Gorovoj},
+           familyi={G\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Universität Siegen}%
+      }
+      \strng{namehash}{7f72ebd5bfe3af76f2faf8a2cfe85bcb}
+      \strng{fullhash}{7f72ebd5bfe3af76f2faf8a2cfe85bcb}
+      \strng{bibnamehash}{7f72ebd5bfe3af76f2faf8a2cfe85bcb}
+      \strng{authorbibnamehash}{7f72ebd5bfe3af76f2faf8a2cfe85bcb}
+      \strng{authornamehash}{7f72ebd5bfe3af76f2faf8a2cfe85bcb}
+      \strng{authorfullhash}{7f72ebd5bfe3af76f2faf8a2cfe85bcb}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Dissertation zur Erlangung des akademischen Grades}
+      \field{title}{Technologieakzeptanz Digitaler Medien bei Universitätsstudierenden verschiedener Fächer und Berufstätigen gleichen Alters: Eine Studie zu den psychologischen Determinanten und Hintergründen der Akzeptanz Digitaler Medien auf der Basis eines neu ausgerichteten Messinstruments}
+      \field{type}{phdthesis}
+      \field{year}{2019}
+    \endentry
+    \entry{govindaraju2005effects}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=696f3fe83b8dcefaccebc93e897b725c}{%
+           family={Govindaraju},
+           familyi={G\bibinitperiod},
+           given={Madhumita},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f6431a9cb2cfab1a764661b7bc17caf0}{%
+           family={Sward},
+           familyi={S\bibinitperiod},
+           given={Deborah},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Boston, MA}%
+      }
+      \list{organization}{1}{%
+        {Springer US}%
+      }
+      \strng{namehash}{35f865a6116e84425a61a96945783e88}
+      \strng{fullhash}{35f865a6116e84425a61a96945783e88}
+      \strng{bibnamehash}{35f865a6116e84425a61a96945783e88}
+      \strng{authorbibnamehash}{35f865a6116e84425a61a96945783e88}
+      \strng{authornamehash}{35f865a6116e84425a61a96945783e88}
+      \strng{authorfullhash}{35f865a6116e84425a61a96945783e88}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Designing Ubiquitous Information Environments: Socio-Technical Issues and Challenges: IFIP TC8 WG 8.2 International Working Conference, August 1–3, 2005, Cleveland, Ohio, USA}
+      \field{title}{Effects of wireless mobile technology on employee work behavior and productivity: An Intel case study}
+      \field{year}{2005}
+      \field{pages}{349\bibrangedash 351}
+      \range{pages}{3}
+    \endentry
+    \entry{janson2020statistic}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9ea9511ead579b18e8400d6d8d175612}{%
+           family={Janson},
+           familyi={J\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {Statista}%
+      }
+      \strng{namehash}{9ea9511ead579b18e8400d6d8d175612}
+      \strng{fullhash}{9ea9511ead579b18e8400d6d8d175612}
+      \strng{bibnamehash}{9ea9511ead579b18e8400d6d8d175612}
+      \strng{authorbibnamehash}{9ea9511ead579b18e8400d6d8d175612}
+      \strng{authornamehash}{9ea9511ead579b18e8400d6d8d175612}
+      \strng{authorfullhash}{9ea9511ead579b18e8400d6d8d175612}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Einschätzung der Produktivität im Homeoffice und dem normalen Arbeitsplatz}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://de.statista.com/infografik/22353/einschaetzung-der-produktivitaet-im-homeoffice-und-dem-normalen-arbeitsplatz/
+      \endverb
+      \verb{url}
+      \verb https://de.statista.com/infografik/22353/einschaetzung-der-produktivitaet-im-homeoffice-und-dem-normalen-arbeitsplatz/
+      \endverb
+    \endentry
+    \entry{nappi2020internet}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=3e1f74b246774f618ec23f86924be9cc}{%
+           family={Nappi},
+           familyi={N\bibinitperiod},
+           given={Italo},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=172596e8ad15a6e38994056152bacb32}{%
+           family={Campos\bibnamedelima Ribeiro},
+           familyi={C\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={Guilherme},
+           giveni={G\bibinitperiod},
+           givenun=0,
+           prefix={de},
+           prefixi={d\bibinitperiod},
+           prefixun=0}}%
+      }
+      \strng{namehash}{128bbcd640b30d10e06688ed1e7c1e92}
+      \strng{fullhash}{128bbcd640b30d10e06688ed1e7c1e92}
+      \strng{bibnamehash}{128bbcd640b30d10e06688ed1e7c1e92}
+      \strng{authorbibnamehash}{128bbcd640b30d10e06688ed1e7c1e92}
+      \strng{authornamehash}{128bbcd640b30d10e06688ed1e7c1e92}
+      \strng{authorfullhash}{128bbcd640b30d10e06688ed1e7c1e92}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Corporate Real Estate}
+      \field{number}{1}
+      \field{title}{Internet of Things technology applications in the workplace environment: a critical review}
+      \field{volume}{22}
+      \field{year}{2020}
+      \field{pages}{71\bibrangedash 90}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1108/JCRE-06-2019-0028
+      \endverb
+    \endentry
+    \entry{sarker2012managing}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=1f7b8ff8bfa8340048c300dc931e6fc0}{%
+           family={Sarker},
+           familyi={S\bibinitperiod},
+           given={Suprateek},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=99a8f5e74c71fcb50cac3c4bff22bcca}{%
+           family={Sarker},
+           familyi={S\bibinitperiod},
+           given={Saonee},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7f338b629083a96ca2619941846819b6}{%
+           family={Xiao},
+           familyi={X\bibinitperiod},
+           given={Xiao},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b3f29ee19b3c54d728c96fe5391a7796}{%
+           family={Ahuja},
+           familyi={A\bibinitperiod},
+           given={Manju},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e09dd8f13606f69ca63f0ee090635242}
+      \strng{fullhash}{fc38e0cb3e8be0d64c9438e3cb5258f9}
+      \strng{bibnamehash}{e09dd8f13606f69ca63f0ee090635242}
+      \strng{authorbibnamehash}{e09dd8f13606f69ca63f0ee090635242}
+      \strng{authornamehash}{e09dd8f13606f69ca63f0ee090635242}
+      \strng{authorfullhash}{fc38e0cb3e8be0d64c9438e3cb5258f9}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Faculty Scholarship}
+      \field{number}{359}
+      \field{title}{Managing Employees’ Use of Mobile Technologies to Minimize Work-Life Balance Impacts}
+      \field{year}{2012}
+      \verb{urlraw}
+      \verb https://ir.library.louisville.edu/faculty/359
+      \endverb
+      \verb{url}
+      \verb https://ir.library.louisville.edu/faculty/359
+      \endverb
+    \endentry
+    \entry{wollersheim2021bildung}{book}{}
+      \name{editor}{3}{}{%
+        {{un=0,uniquepart=base,hash=23d91aa7ce551b72359d42741a2d53fe}{%
+           family={Wollersheim},
+           familyi={W\bibinitperiod},
+           given={Heinz-Werner},
+           giveni={H\bibinithyphendelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1a3e5efabb1a54eda4095b3bf671cb3c}{%
+           family={Karapanos},
+           familyi={K\bibinitperiod},
+           given={Marios},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=506a660f2b7c20828f81cf7376d57e01}{%
+           family={Pengel},
+           familyi={P\bibinitperiod},
+           given={Norbert},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Münster  New York}%
+      }
+      \list{publisher}{1}{%
+        {Waxmann}%
+      }
+      \strng{namehash}{ee7419f713337a4c6984bb5a42118fdb}
+      \strng{fullhash}{ee7419f713337a4c6984bb5a42118fdb}
+      \strng{bibnamehash}{ee7419f713337a4c6984bb5a42118fdb}
+      \strng{editorbibnamehash}{ee7419f713337a4c6984bb5a42118fdb}
+      \strng{editornamehash}{ee7419f713337a4c6984bb5a42118fdb}
+      \strng{editorfullhash}{ee7419f713337a4c6984bb5a42118fdb}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-3-8309-4456-0}
+      \field{issn}{1434-3436}
+      \field{note}{Waxmann Verlag GmbH}
+      \field{title}{Bildung in der digitalen Transformation}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://doi.org/10.31244/9783830994565
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.31244/9783830994565
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

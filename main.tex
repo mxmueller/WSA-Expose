@@ -1,5 +1,5 @@
 \documentclass[12pt,a4paper]{article}
-\usepackage[includeheadfoot,margin=2cm]{geometry}
+\usepackage[includeheadfoot,margin=2.6cm]{geometry}
 
 \usepackage{tikz}
 \usepackage{pgfplots}
@@ -9,13 +9,29 @@
 \usepackage[utf8]{inputenc}
 \usepackage{listings}
 
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows,positioning}
+\usepackage{pgf-pie}
+
+\usepackage{parskip} % Füge das parskip-Paket hinzu
+
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue, citecolor=blue]{hyperref}
+
 \usepackage{csquotes}
 \usepackage{abbrevs}
-\usepackage[authordate,bibencoding=auto,strict,noibid,backend=biber]{biblatex-chicago}
 \bibliography{Bibliography}
 
+\usepackage[style=authoryear, backend=biber]{biblatex}
+\addbibresource{quellen.bib}
+
+\usepackage{floatrow}
 % change language settings here "ngerman", "english"
 \usepackage[english,ngerman]{babel}
+
+% Definiere das Caption-Format für floatrow
+\DeclareFloatSeparators{mysep}{\hspace{1cm}}
+\floatsetup[figure]{capposition=top,captionskip=0cm}
+\captionsetup[figure]{format=default,name=Abbildung}
 
 \include{_Configuration}
 
@@ -31,36 +47,47 @@
 \begin{document}
 \selectlanguage{german}
 
-\maketitle
-\newpage
+\maketitle 
+\thispagestyle{empty} % Remove page numbering from the first page
+\newpage	
 
-\subsection*{Einführung }
-Spätestens seit der Corona Pandemie erfuhr die Arbeitswelt in vielen wirtschaftlichen Sektoren eine rasante Digitale Transformation. Damit änderte sich die Arbeitssituation und –Werkzeuge der Arbeitnehmenden bis heute. Das nachfolgende Exposé widmet sich der Untersuchung von ständiger Verfügbarkeit im Kontext der Produktivität und geschäftlicher Nutzung. Konkret wird erforscht, wie die digitale und mobile Migration, durch den Einsatz von tragbaren Computern, Smartphones, Tablets und sonstigen technischen Komponenten, das Berufsleben im Fokus der Leistungsfähigkeit prägen. Dabei werden sowohl Vor- als auch Nachteile dieser Entwicklung abgewogen und Fallstudien beleuchtet. Zusätzlich betrachtet die Arbeit die Rolle von Tätigkeit, Branche und Generationsunterschieden in Bezug auf die genannte Thematik, um die Frage vollumfassend aufarbeiten zu können.
+\subsubsection*{Einführung }
+Spätestens seit der Corona Pandemie erfuhr die Arbeitswelt in vielen wirtschaftlichen Sektoren eine rasante Digitale Transformation.
 
-\subsection*{Theoretischer Rahmen}
+\begin{quote}
+\emph{"Die digitale Transformation ist kein technologisches Upgrade des Bestehenden, sondern eine dynamische Veränderung auf allen Ebenen des Unternehmens"} \parencite{frauenhofer}.
+\end{quote}
+
+Damit änderte sich die Arbeitssituation und –Werkzeuge der Arbeitnehmenden bis heute. Das nachfolgende Exposé widmet sich der Untersuchung von ständiger Verfügbarkeit im Kontext der Produktivität und geschäftlicher Nutzung. Konkret wird erforscht, wie die digitale und mobile Migration, durch den Einsatz von tragbaren Computern, Smartphones, Tablets und sonstigen technischen Komponenten, das Berufsleben im Fokus der Leistungsfähigkeit prägen. Dabei werden sowohl Vor- als auch Nachteile dieser Entwicklung abgewogen und Fallstudien beleuchtet. Zusätzlich betrachtet die Arbeit die Rolle von Tätigkeit, Branche und Generationsunterschieden in Bezug auf die genannte Thematik, um die Frage vollumfassend aufarbeiten zu können.
+
+\subsubsection*{Theoretischer Rahmen}
 Um herauszufinden, ob die ständige Verfügbarkeit und Nutzung mobiler Technologien Auswirkungen auf die Produktivität haben, wird in folgender Arbeit untersucht, welche Technologien in welchen Branchen und Tätigkeitsbereichen eingesetzt werden. 
 Die Recherche konzentriert sich dabei auf die geschäftliche Nutzung mobiler Technologien.  
 Die private Nutzung wird dabei ausgeschlossen, da diese Betrachtung mit weiteren Einflussfaktoren gemessen und eingegrenzt werden muss.
-Die betrachteten Forschungen zeigen als Grundlage, dass die Einführung von IoT-Geräten die Produktivität der Arbeiter generell steigern kann, nachdem die Änderungen des Arbeitsfeldes betrachtet wurden.
-Die Produktivität wird eingegrenzt in die Definition der idealistischen Produktivität, die von Frenz benannt wird.
+Die betrachteten Forschungen zeigen als Grundlage, dass die Einführung von IoT-Geräten die Produktivität der Arbeiter generell steigern kann, nachdem die Änderungen des Arbeitsfeldes betrachtet wurden \parencite[vgl.][]{nappi2020internet}.
+Die Produktivität wird von Frenz eingegrenzt in \emph{"die Produktivitäten der Erzeugnisse, der Abteilungen, der Arbeitsgang-Gruppen, der Arbeitsplätze und der Arbeitsgänge"} \parencite{frenz1963definition}.
 Dabei handelt es sich bei Produktivität entweder um die Zunahme der Quantität oder der Qualität des zu liefernden Produkts oder der angebotenen Dienstleistung. 
 
-\subsection*{Positive Auswirkungen}
-Digitale und mobile Informations- und Kommunikationstechnologien (IKT) sind in der heutigen Zeit nichtmehr wegzudenken und beherrschen den Arbeitsalltag aller. Die Nutzung dieser Geräte bietet neben den negativen Auswirkungen auf uns und unsere mentale Gesundheit zahlreiche positive Aspekte, welche unsere Arbeit und die Kommunikation mit anderen deutlich erleichtert und die Effizienz steigert. Zum Beispiel ist durch die Digitalisierung die Möglichkeit gegeben, von überall auf der Welt arbeiten zu können und damit die Gebundenheit an einen Standort nichtmehr existent. Aus einer Studie der Bitkom e.V, dem Branchenverband der deutschen Informations- und Telekommunikationsbranche (2013), geht hervor, dass bereits vor zehn Jahren 45 Prozent der erwerbstätigen Deutschen, welche in ihrer Arbeit mit mobilen Technologien arbeiten, dies zumindest gelegentlich auch von zu Hause tun (Homeoffice). Auch die Nutzung von Produktivitäts-Apps und –Tools haben in der Kollaboration innerhalb der Unternehmen zunehmend an Bedeutung gewonnen, da sowohl eine dezentralisierte Speicherung der Informationen, als auch ein Zugriff und Bearbeitung dieser von jedem Mitarbeiter von überall möglich ist. Somit kann man festhalten, dass mobile Geräte und die Nutzung dieser, im Hinblick auf den Arbeitsalltag, Flexibilität und Mobilität fördern und ermöglichen. 
- 
-\subsection*{Negative Auswirkungen}
-Die Verwendung mobiler Technologien birgt trotz ihrer positiven Effekte auf die Produktivität erhebliche Nachteile. Eine deutliche Beeinträchtigung besteht in den Ablenkungen, die diese Geräte mit sich bringen. Ständige Benachrichtigungen lenken häufig von Aufgaben ab und mindern die Effizienz sowie Arbeitsqualität, insbesondere im HomeOffice, wo die Trennlinie zwischen Arbeit und Familie verschwimmt. Die permanente Erreichbarkeit durch Mobilgeräte führt zu stressbedingten Problemen und dem Druck, ständig verfügbar zu sein. Dies verstärkt den Stress, potenziellen Burnout und wird durch die Unklarheit zwischen Arbeit und Freizeit verschärft. Viele prüfen sogar außerhalb der Arbeitszeit Arbeits-E-Mails. Dieser negative Effekt wird noch verstärkt, wenn mobile Technologien genutzt werden, die vom Unternehmen finanziert wurden. Diese verändern das psychologische Arbeitsverhältnis, indem sie eine ständig erhöhte Verfügbarkeit und Reaktionsfähigkeit erwarten. Mitarbeiter können rund um die Uhr kontaktiert werden und arbeiten zu ungewöhnlichen Zeiten, um den Anforderungen gerecht zu werden. Zusätzlich verstärken mobile Technologien den inneren Drang, stets auf dem neuesten Stand zu sein. Die permanente Verbindung fördert die Kontinuität der Erreichbarkeit und erhöhten Arbeitsstress, der die Gesundheit und das Wohlbefinden der Mitarbeiter beeinträchtigt. Zusammenfassend kann gesagt werden, dass mobile Technologien auf der Arbeit Stress erhöhen, einen negativen Einfluss auf die Produktivität haben und eine gesunde Work-LifeBalance schwieriger zu erreichen ist. 
+\subsubsection*{Bewertung}
+Die Verwendung mobiler Technologien birgt förderliche aber auch beeinträchtigend Faktoren. Eine deutlicher Nachteil entsteht mit den Ablenkungen, die mobile Geräte mit sich bringen. Ständige Benachrichtigungen lenken häufig von Aufgaben ab und mindern die Effizienz sowie Arbeitsqualität, insbesondere im HomeOffice, wo die Trennlinie zwischen Arbeit und Familie verschwimmt. Die permanente Erreichbarkeit durch Mobilgeräte führt zu stressbedingten Problemen und dem Druck, ständig verfügbar zu sein. Dies verstärkt den Stress, potenziellen Burnout und wird durch die Unklarheit zwischen Arbeit und Freizeit verschärft. Dieser negative Effekt wird noch verstärkt, wenn mobile Technologien genutzt werden, die vom Unternehmen finanziert wurden, beispielsweise durch das Prüfen arbeitsbezogener E-Mails außerhalb der Arbeitszeiten. Diese Faktoren verändern das psychologische Arbeitsverhältnis, indem sie eine ständig erhöhte Verfügbarkeit und Reaktionsfähigkeit erwarten. Mitarbeiter können rund um die Uhr kontaktiert werden und sind versucht, zu ungewöhnlichen Zeiten zu arbeiten. Zusätzlich verstärken mobile Technologien den inneren Drang, stets auf dem neuesten Stand zu sein. Die permanente Verbindung fördert die Kontinuität der Erreichbarkeit und erhöhten Arbeitsstress, der die Gesundheit und das Wohlbefinden der Mitarbeiter beeinträchtigt. Zusammenfassend kann gesagt werden, dass mobile Technologien auf der Arbeit den Stress erhöhen, einen negativen Einfluss auf die Produktivität haben und eine gesunde Work-Life-Balance erschweren \parencite[vgl.][]{sarker2012managing}. 
 
-\subsection*{Rolle der Tätigkeit und Branche}
+Allerdings bietet die Nutzung neben den negativen Auswirkungen auf Arbeitnehmende und deren mentale Gesundheit zahlreiche positive Aspekte, welche die Arbeit und die damit verbundene Kommunikation mit anderen deutlich erleichtert und diesbezüglich die Effizienz steigert.
+Zum Beispiel ist durch die fortschreitende Digitalisierung die Möglichkeit gegeben, von überall auf der Welt arbeiten zu können und damit die Gebundenheit an einen Standort nichtmehr existent. 
+\emph{"Mobile Technologien ermöglichen flexible Arbeitsmodelle nicht nur, sie fordern diese geradezu heraus"} \parencite[Stephan Pfisterer, S.9,][]{arbeit30}.
+Aus einer Studie der Bitkom e.V, dem Branchenverband der deutschen Informations- und Telekommunikationsbranche (2013), geht hervor, dass bereits vor zehn Jahren 45 Prozent der erwerbstätigen Deutschen, welche in ihrer Arbeit mit mobilen Technologien arbeiten, dies zumindest gelegentlich auch von zu Hause tun (Homeoffice). Somit ist von einer Vertrautheit mit dem Grundsätzlichen Konzept und Arbeitsweisen der mobilen Arbeit bei vielen Arbeitnehmern auszugehen und dass das Angebot zum mobilen Arbeiten durchaus auch vor der Pandemie angenommen wurde.
+Auch die Nutzung von Produktivitäts-Apps und –Tools haben in der Kollaboration innerhalb der Unternehmen zunehmend an Bedeutung gewonnen, da sowohl eine dezentralisierte Speicherung der Informationen, als auch ein Zugriff und Bearbeitung dieser von jedem Mitarbeiter von überall möglich ist.
+Somit kann festgehalten werden, dass mobile Geräte und die Nutzung dieser, im Hinblick auf den Arbeitsalltag, Flexibilität und Mobilität fördern und ermöglichen \parencite[vgl.][]{arbeit30}. 
+ 
+\subsubsection*{Rolle der Tätigkeit und Branche}
 Die Tätigkeit und die Branche haben unterschiedliche Einflüsse auf die Nutzung mobiler Technologien und somit auch auf die daraus resultierende Produktivität der Arbeitenden. 
 Die Signifikanz der Tätigkeit übertrifft dabei die Bedeutung der Branche, da sich ähnliche Tätigkeiten in unterschiedlichen Branchen wiederfinden können. 
 Zu betrachten sind die Unterschiede in den Tätigkeiten, die unabhängig von räumlichen Gegebenheiten und Tätigkeiten, die nur in entsprechenden Räumen mit bereitgestellten Ressourcen ausführbar sind. 
 Geistige Tätigkeiten wie in der Verwaltung in Unternehmen verlangen beispielsweise einen bestehenden Kontakt zum Unternehmen, der durch mobile Technologien möglich ist, aber sind nicht an Büroflächen gebunden. 
-Körperliche Tätigkeiten hingegen wie das Handwerk oder viele Dienstleistungen benötigen Werkzeuge oder sind orts- oder wetterabhängig. 
+Körperliche Tätigkeiten hingegen wie das Handwerk oder viele Dienstleistungen benötigen Werkzeuge oder sind orts- oder wetterabhängig.
+\emph{"Arbeiter, die einer körperlichen Arbeit nachgehen […] erhoffen sich vor allem zeitliche Freiheiten"} \parencite{frenz1963definition}, anstatt wie \emph{"White-Collar-Workers"} \parencite{frenz1963definition}, die sich die Möglichkeit zu Homeoffice und hybrider Arbeit wünschen. 
 In diesen Abgrenzungen können mobile Technologien verschieden eingesetzt werden und beeinflussen die Arbeitenden unterschiedlich. 
-Des Weiteren lohnt es sich die Arbeitskulturen in Firmen zu vergleichen und auch deren Kommunikationsmuster, da diese die Offenheit über die Nutzung von Technologien bestimmen.
 
-\subsection*{Methodik}
+\subsubsection*{Methodik}
 Eine Befragung zum Thema „Nutzung mobiler Technologien“ unterschiedlicher Tätigkeitsgruppen in verschiedenen Firmen kann dazu beitragen, einen repräsentativen Querschnitt abzubilden.  
 Um die Gesellschaft widerspiegeln zu können, sind Erhebungen in allen Wirtschaftssektoren nötig. 
 Die Fragen befassen sich damit, ob die Befragten in ihrer Tätigkeit ein mobiles Endgerät durch ihr Unternehmen erhalten, wofür und wieviel dieses genutzt wird.  
@@ -70,64 +97,59 @@ Die Untersuchung von Matthias Jansen zeigt genau diese Thematik bereits auf.
 Demnach ist die Produktivität nicht bemerkenswert negativ durch das remote Arbeiten beeinflusst. 
  
 
-\begin{center}
-	\begin{multicols}{2}
-		\begin{tikzpicture}
-			\begin{axis}[
-				ybar stacked,
-				bar width=15mm, % Schmälere Balken
-				symbolic x coords={A, B, C},
-				xtick=data,
-				xticklabels={},
-				ylabel={Prozentsatz},
-				ymin=0,
-				ymax=100,
-				yticklabel={\pgfmathprintnumber{\tick}\%},
-				nodes near coords,
-				nodes near coords align={vertical},
-				enlargelimits=false,
-				width=0.9\linewidth, % Breite des Diagramms
-				height=6cm, % Höhe des Diagramms
-				x tick label style={anchor=north, align=center},
-				xtick style={draw=none},
-				x axis line style={draw=none}
-				]
-				
-				\addplot[ybar, fill=blue!30] coordinates {(A,10) (B,15) (C,20)};
-				\addplot[ybar, fill=green!30] coordinates {(A,25) (B,30) (C,15)};
-				\addplot[ybar, fill=red!30] coordinates {(A,65) (B,55) (C,65)};
-			\end{axis}
-		\end{tikzpicture}
-		
-		\columnbreak
-		
-		\raggedright
-		\textbf{Farben Legende}\\
-		Blau: Trifft genau zu\\
-		Grün: Trifft eher zu\\
-		Rot: Trifft (eher) nicht zu
-		
-		\textbf{Kategorien Legende}\\
-		A: Arbeit kann im Homeoffice gut erledigt werden\\
-		B: Arbeit im Homeoffice ist produktiver\\
-		C: Mir fehlt der direkte Kontakt zu Kollegen
-	\end{multicols}
-\end{center}
+\subsubsection*{Generationsunterschiede}
+Grundsätzlich unterscheiden sich Generationen in deren Einstellungen, Ansichten und Fähigkeiten maßgeblich. Generationen die tendenziell mit Technologie aufgewachsen sind nutzen diese deutlich routinierter als ältere Generationen, welche den Umgang zunächst lernen müssen und möglicher technologiebezogene Ängste vorhanden sind. Auch die Art und Weise wie die verschiedenen Generationen untereinander kommunizieren sind in deren Abläufe grundlegend unterschiedlich. Die ältere Generation bevorzugt Telefonate oder persönliche Treffen, wohingegen die jüngere Generation eher dazu neigt die textbasierte Kommunikation zu bevorzugen und über das Internet zu kommunizieren \parencite[vgl.][]{wollersheim2021bildung}. 
 
-\subsection*{Generationsunterschiede}
-Im Hinblick auf den Umgang mit Informations- und Kommunikationstechnik (IKT) spielen die Generationsunterschiede eine wichtige Rolle. Hierbei unterscheiden sich die verschiedenen Generationen in deren Einstellungen, Ansichten und Fähigkeiten maßgeblich. Generationen die tendenziell mit Technologie aufgewachsen sind nutzen diese deutlich routinierter als ältere Generationen, welche den Umgang zunächst lernen müssen und möglicher technologiebezogene Ängste vorhanden sind. Auch die Art und Weise wie die verschiedenen Generationen untereinander kommunizieren sind in deren Abläufe grundlegend unterschiedlich. Die ältere Generation bevorzugt Telefonate oder persönliche Treffen, wohingegen die jüngere Generation eher dazu neigt die textbasierte Kommunikation zu bevorzugen und über das Internet zu kommunizieren. Dies lässt sich wiederrum auf die digitalen Fähigkeiten zurückführen, da die jüngere Generation deutlich versierter im Umgang mit den digitalen Werkzeugen ist und sich leichter auf neue Technologien einstellen kann. Vor allem in Hinblick auf die Arbeitsweise und der damit verbundenen Nutzung der Informations- und Kommunikationstechnik kann man deutliche Unterschiede feststellen, da die jüngere Generation deutlich offener für Remote-Arbeit, flexible Arbeitszeiten und den Einsatz von kollaborativen Online-Tools sind. Jedoch ist es wichtig festzuhalten, dass diese Unterschiede allgemeine Trends darstellen, aber auch individuelle Unterschiede innerhalb jeder Generation bestehen, welche von verschiedensten Faktoren wie Bildung, Interesse und persönlichen Erfahrungen abhängig sind.
+Dies lässt sich wiederrum auf die digitalen Fähigkeiten zurückführen, da die jüngere Generation deutlich versierter im Umgang mit den digitalen Werkzeugen ist und sich leichter auf neue Technologien einstellen kann. Vor allem in Hinblick auf die Arbeitsweise und der damit verbundenen Nutzung der Informations- und Kommunikationstechnik kann man deutliche Unterschiede feststellen, da die jüngere Generation deutlich offener für Remote-Arbeit, flexible Arbeitszeiten und den Einsatz von kollaborativen Online-Tools sind. Jedoch ist es wichtig festzuhalten, dass diese Unterschiede allgemeine Trends darstellen, aber auch individuelle Unterschiede innerhalb jeder Generation bestehen, welche von verschiedensten Faktoren wie Bildung, Interesse und persönlichen Erfahrungen abhängig sind \parencite[vgl.][]{gorovoj2019technologieakzeptanz}.
 
-\subsection*{Fallstudie}
-Einige Unternehmen und Organisationen haben sich die Entwicklung der mobilen Technologien zu Nutze gemacht und gezielt eingesetzt, um die Produktivität der Mitarbeiter zu verbessern. Ein Beispiel dafür, wie mobile Technologien gezielt zur Produktivitätssteigerung eingesetzt wurden, ist die Intel Corporation, ein Technologieunternehmen. Das Unternehmen untersuchte in ihrer Fallstudie die Auswirkungen mobiler Technologie auf Mitarbeiterverhalten und -produktivität. Durch die Einführung ihrer eigenen mobilen Technologie wurde eine Produktivitätssteigerung von 37,3 Prozent erreicht. Neben quantitativen Verbesserungen führte dies zu einem positiven Arbeitsverhalten. Durch "Time Slicing" war eine effiziente Nutzung kurzer Zeitfenster möglich, während "Time Shifting" flexiblere Arbeitszeiten ermöglichte. Hierbei spielt auch die einfache Verbindung vom Unternehmensnetzwerk eine Rolle. Dies trug zur Work-Life-Balance bei, da Mitarbeiter an verschiedenen Orten arbeiten und persönlichen Verpflichtungen gerecht werden konnten. Die Fallstudie verdeutlicht, wie gezielte Nutzung mobiler Technologien die Arbeitsproduktivität verbessern kann. 
+\subsubsection*{Fallstudie}
+Einige Unternehmen und Organisationen haben sich die Entwicklung der mobilen Technologien zu Nutze gemacht und gezielt eingesetzt, um die Produktivität der Mitarbeiter zu verbessern. Ein Beispiel dafür, wie mobile Technologien gezielt zur Produktivitätssteigerung eingesetzt wurden, ist die Intel Corporation, ein Technologieunternehmen. Das Unternehmen untersuchte in ihrer Fallstudie die Auswirkungen mobiler Technologie auf Mitarbeiterverhalten und -produktivität. Durch die Einführung ihrer eigenen mobilen Technologie wurde eine Produktivitätssteigerung von 37,3 Prozent erreicht. Neben quantitativen Verbesserungen führte dies zu einem positiven Arbeitsverhalten. Durch "Time Slicing" war eine effiziente Nutzung kurzer Zeitfenster möglich, während "Time Shifting" flexiblere Arbeitszeiten ermöglichte. Hierbei spielt auch die einfache Verbindung vom Unternehmensnetzwerk eine Rolle. Dies trug zur Work-Life-Balance bei, da Mitarbeiter an verschiedenen Orten arbeiten und persönlichen Verpflichtungen gerecht werden konnten. 
 
-\subsection*{Bilanz}
+	Ein Nutzer, der die Möglichkeit hatte mobile Technologie zu nutzen gab folgendes Feedback: 
+	\emph{"Without Intel Centrino [mobile technology], I would have either missed [the] or would have not taken advantage of the opportunity to meet with the client, which had been in the works for about two months"}  \parencite{govindaraju2005effects}. An dieser Aussage wird deutlich, dass es nur durch die Technologie möglich war, zwei wichtige Termine einhalten zu können, sodass der User sich nicht gegen die Deadline oder das Treffen entscheiden musste.
+
+	Die gezeigte Fallstudie verdeutlicht dazu, wie gezielte Nutzung mobiler Technologien die Arbeitsproduktivität verbessern kann, bezieht allerdings auch den fehlenden menschlichen Kontakt mit ein \parencite[vgl.][]{govindaraju2005effects}.
+
+
+\begin{figure}
+    \centering
+    \begin{tikzpicture}
+        \begin{axis}[
+            ybar,
+            width=0.6\textwidth,
+            height=7.2cm,
+            ylabel={Prozent},
+            symbolic x coords={Arbeit kann\\im Homeoffice genauso\\gut erledigt werden, Arbeit im\\Homeoffice\\ist produktiver, Mir fehlt\\der direkte Kontakt\\zu Kollegen},
+            xtick=data,
+            x tick label style={rotate=45, anchor=east, align=center}, % Diagonale Beschriftung und Ausrichtung
+            nodes near coords,
+            nodes near coords align={vertical},
+            bar width=10pt, % Breite der Balken
+            every axis plot/.append style={fill}, % Balken füllen
+            cycle list/Set1-3, % Farbpalette für Balken
+            legend style={at={(1.05,0.5)}, anchor=west}, % Legende rechts von Diagramm
+            ymajorgrids=true, % Hilfslinien
+            legend cell align=left % Ausrichtung der Legende
+        ]
+        \addplot coordinates {(Arbeit kann\\im Homeoffice genauso\\gut erledigt werden,44) (Arbeit im\\Homeoffice\\ist produktiver,23) (Mir fehlt\\der direkte Kontakt\\zu Kollegen,33)};
+        \addplot coordinates {(Arbeit kann\\im Homeoffice genauso\\gut erledigt werden,37) (Arbeit im\\Homeoffice\\ist produktiver,35) (Mir fehlt\\der direkte Kontakt\\zu Kollegen,41)};
+        \addplot coordinates {(Arbeit kann\\im Homeoffice genauso\\gut erledigt werden,18) (Arbeit im\\Homeoffice\\ist produktiver,41) (Mir fehlt\\der direkte Kontakt\\zu Kollegen,25)};
+        \legend{Trifft genau zu, Trifft eher zu, Trifft (eher) nicht zu} % Legende
+        \end{axis}
+    \end{tikzpicture}
+    \caption{Befragung zur Produktivität im Homeoffice ggü. dem normalen Arbeitsplatz \parencite[vgl.][]{janson2020statistic}}
+\end{figure}
+
+\subsubsection*{Bilanz}
 Wie wir miteinander arbeiten und kommunizieren wurde durch die Transition vieler Sektoren zum mobilen Arbeitsplatz zweifellos verändert. Die vorliegende Untersuchung beschäftigte sich dabei mit den Auswirkungen der ständigen Verfügbarkeit mobiler Technologien auf die Produktivität der heutigen Arbeitswelt.  
 
-In Untersuchungen der Arbeit wird die Rolle der Tätigkeit und die dazu gehörende Branche einzeln betrachtet. Daraus wurde deutlich, dass die Tätigkeiten unterschiedliche Anforderungen an die Geräte mit sich bringen, was eine differenzierte Herangehensweise erfordert. Die wichtigsten Faktoren zeichnen sich durch die Art der Tätigkeit, Arbeitsumgebung, Kollaboration und zeitliche Flexibilität aus. So können die Ergebnisse der Arbeit nicht gleichermaßen auf einen Maurermeister eines mittelständischen Unternehmens, welcher mit seinem Team zum Stichtag sein Projekt fertig zu stellen hat und einen Informatik Freelancer, der für ein Tech-Startup arbeitet, angewendet werden. Daher sind die folgenden Auswertungen auf digital transformierbare Berufsgruppen anzuwenden. Im Folgenden sind damit gemeint: Büro und Verwaltung, Forschung, Schreibtätigkeiten und Lektorat, IT, Vertrieb und Marketing, Kreative Berufe, Bildungstätigkeiten. 
+In Untersuchungen von Arbeit allgemein musste die Rolle der Tätigkeit und die dazu gehörende Branche dringend betrachtet werden. Daraus wurde deutlich, dass die Tätigkeiten unterschiedliche Anforderungen mit sich bringen, was eine differenzierte Herangehensweise erfordert. Die wichtigsten Faktoren zeichnen sich durch die Art der Tätigkeit, Arbeitsumgebung, Kollaboration und zeitliche Flexibilität aus. So können die Ergebnisse der Arbeit nicht gleichermaßen auf einen Maurermeister eines mittelständischen Unternehmens, welcher mit seinem Team zum Stichtag sein Projekt fertig zu stellen hat und einen Informatik Freelancer, der für ein Tech-Startup arbeitet, angewendet werden. Daher sind die folgenden Auswertungen auf digital transformierbare Berufsgruppen anzuwenden. Arbeitsumgebungen die in betracht gezogen werden können: Büro und Verwaltung, Forschung, Schreibtätigkeiten und Lektorat, IT, Vertrieb und Marketing, Kreative Berufe, Bildungstätigkeiten. Dabei fallen negative Aspekte wie Ablenkung, besonders Stress und die fließenden Grenzen zwischen Arbeits- und Freizeit der Arbeitnehmenden auf. Besonders im Kontext des Generationsunterschiedes potenzieren sich die genannten negativen Aspekte aufgrund der differenzierten Ansichten von jungen und älteren Arbeitnehmenden und besonders den individuellen Fähigkeiten im Umgang mit der Technologie. 
 
-Wird die Auswertung betrachtet fallen zunächst die negativen Effekte ins Auge. Ablenkung, besonders Stress und die fließenden Grenzen zwischen Arbeits- und Freizeit der Arbeitnehmenden. Unklarheiten die in der Beeinträchtigung von Produktivität resultieren können. Besonders im Kontext des Generationsunterschiedes potenzieren sich die genannten negativen Aspekte aufgrund der differenzierten Ansichten von jungen und älteren Arbeitnehmenden und besonders den individuellen Fähigkeiten im Umgang mit der Technologie. 
+Ob die genannten Nachteile durch den Generationswechsel in den nächsten Jahren abgedämpft werden können, kann nur gemutmaßt werden. Sicher aber ist, die Arbeitssituation im Allgemeinen hat sich stark gewandelt und es nicht davon auszugehen, dass die Wirtschaft ganzheitlich einen Schritt zurück, zum Büroarbeitsplatz vollzieht. Zudem dies nicht im mehrheitlichen Interesse der Mitarbeiter steht, wie bereits vergangene Studien der Bitkom e.V aufzeigten. Die positiven Auswirkungen auf das arbeitende Individuum zeigen sich klar. Die Möglichkeit zur Flexibilität, welche den Kernvorteil der Mobilität abbildet, verbessert den Arbeitsalltag nachhaltig. Mütter und Väter wird die Arbeit parallel zur Kindererziehung ermöglicht, Arbeit aus dem Ausland oder variabel abseits der Stoßzeiten sind nur Beispiele möglicher Szenarien die ohne den Einsatz mobiler Endgeräte nicht möglich wären. Unternehmen wie Intel Corporation zeigen dabei zusätzlich auf, dass der gezielte Einsatz jener Technologien außerdem die Produktivität und Arbeitsverhalten positiv beeinflussen kann.  
 
-Ob die genannten Nachteile durch den Generationswechsel in den nächsten Jahren abgedämpft werden können, kann nur gemutmaßt werden. Sicher aber ist, die Arbeitssituation im Allgemeinen hat sich stark gewandelt und es nicht davon auszugehen, dass die Wirtschaft ganzheitlich einen Schritt zurück, zum Büroarbeitsplatz vollzieht. Zudem dies nicht im mehrheitlichen Interesse der Mitarbeiter steht. Denn die positiven Auswirkungen auf das arbeitende Individuum sind unbestreitbar. Die Möglichkeit zur Flexibilität, welche den Kernvorteil der Mobilität abbildet, verbessert den Arbeitsalltag nachhaltig. Mütter und Väter wird die Arbeit parallel zur Kindererziehung ermöglicht, Arbeit aus dem Ausland oder variabel abseits der Stoßzeiten sind nur Beispiele möglicher Szenarien die ohne den Einsatz mobiler Endgeräte nicht möglich wären. Unternehmen wie Intel Corporation zeigen dabei zusätzlich auf, dass der gezielte Einsatz jener Technologien außerdem die Produktivität und Arbeitsverhalten positiv beeinflussen kann.  
+In Anbetracht dieser Faktoren wird deutlich, dass sich, zumindest zum aktuellen Zeitpunkt, noch eine Doppelnatur der Arbeitsweisen durch mobile Technologien ergibt. Sie kann sowohl eine große Chance zur Steigerung der Produktivität bieten, im Kontext der Forschungsfrage, als auch potenzielle Gefahren für das Wohlbefinden und die Work-Life-Balance der Arbeitnehmer und besonders der älteren Generationen mit sich bringen. Abschließen kann festgehalten werden, dass viele negative Aspekte durch den Arbeitgeber mit Regularien eingegrenzt werden können. Die vorliegende Untersuchung bietet dazu, und für weitere Diskussionen eine theoretische und argumentative Grundlage, um eine zukunftsorientierte Arbeitswelt zu fördern.
 
-In Anbetracht dieser Faktoren wird deutlich, dass sich, zumindest zum aktuellen Zeitpunkt, noch eine Doppelnatur der Arbeitsweisen durch mobile Technologien ergibt. Sie kann sowohl eine Chance zur Steigerung der Produktivität bieten als auch potenzielle Gefahren für das Wohlbefinden und die Work-Life-Balance der Arbeitnehmer und besonders der älteren Generationen mit sich bringen. Abschließen kann festgehalten werden, dass allerdings viele negative Aspekte durch den Arbeitgeber mit Regularien eingegrenzt werden können. Die vorliegende Untersuchung bietet dazu und für weitere Diskussionen eine theoretische und argumentative Grundlage, um eine zukunftsorientierte Arbeitswelt zu fördern und das Wohlbefinden der Arbeitnehmer gewährleisten zu können. 
+
+\printbibliography
 \end{document}
+
