@@ -2353,12 +2353,13 @@
     <bcf:citekey order="6">arbeit30</bcf:citekey>
     <bcf:citekey order="7">frenz1963definition</bcf:citekey>
     <bcf:citekey order="8">frenz1963definition</bcf:citekey>
-    <bcf:citekey order="9">wollersheim2021bildung</bcf:citekey>
-    <bcf:citekey order="10">gorovoj2019technologieakzeptanz</bcf:citekey>
-    <bcf:citekey order="11">govindaraju2005effects</bcf:citekey>
+    <bcf:citekey order="9">janson2020statistic</bcf:citekey>
+    <bcf:citekey order="10">wollersheim2021bildung</bcf:citekey>
+    <bcf:citekey order="11">gorovoj2019technologieakzeptanz</bcf:citekey>
     <bcf:citekey order="12">govindaraju2005effects</bcf:citekey>
-    <bcf:citekey order="13">janson2020statistic</bcf:citekey>
+    <bcf:citekey order="13">govindaraju2005effects</bcf:citekey>
     <bcf:citekey order="14">janson2020statistic</bcf:citekey>
+    <bcf:citekey order="15">janson2020statistic</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
