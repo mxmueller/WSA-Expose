@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.5.8)  6 SEP 2023 00:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.5.8)  6 SEP 2023 16:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -892,7 +892,34 @@ Package babel Info: Making " an active character on input line 122.
 \@input{_Configuration.aux}
 \openout2 = `_Configuration.aux'.
 
-(./_Configuration.tex)
+(./_Configuration.tex
+
+./_Configuration.tex:9: LaTeX Error: \include cannot be nested.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 \include{main}
+                  \include{main}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./_Configuration.tex:9: LaTeX Error: \include cannot be nested.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 \include{main}\include{main}
+                                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
@@ -1130,13 +1157,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  43679 strings out of 478994
  993167 string characters out of 5858185
- 1868324 words of memory out of 5000000
+ 1868328 words of memory out of 5000000
  60465 multiletter control sequences out of 15000+600000
  419474 words of font info for 56 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
  113i,19n,116p,1684b,2397s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on /Users/maximilianmuller/Git/WSA-Expose/.texpadtmp/main.pdf (7 pages, 91235 bytes).
+Output written on /Users/maximilianmuller/Git/WSA-Expose/.texpadtmp/main.pdf (7 pages, 91219 bytes).
 PDF statistics:
  113 PDF objects out of 1000 (max. 8388607)
  97 compressed objects within 1 object stream
